@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="/assets/Css/Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha o Método de Pagamento</h1>
+        <div class="payment-options">
+            <div class="payment-option" onclick="irParaCarregamento()">💳 Débito</div>
+            <div class="payment-option" onclick="irParaCarregamento()">💳 Crédito</div>
+            <div class="payment-option" onclick="irParaCarregamento()">⚡ PIX</div>
+        </div>
+        <div class="buttons">
+            <a href="/publico/escolhaRecarga.html" class="button secondary">Voltar para Seleção de Recargas</a>
+        </div>
+    </div>
+    <script>
+        function irParaCarregamento() {
+            window.location.href = "/publico/recargaNormal.html";
+        }
+    </script>
+</body>
+</html>
